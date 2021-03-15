@@ -12,28 +12,32 @@ selector.classList.add('welcome-animation');
 container.appendChild(selector);
 
 // Property
-    var property = document.createElement("textarea");
-    property.rows = '2';
-    property.cols = '30';
-    property.id = 'property';
-    property.placeholder = 'Property';
-    setTimeout(waitForWelcomeSecond, 50);
-    function waitForWelcomeSecond(){
-        selector.classList.add('welcome-animation');
-        };
-    container.appendChild(property);
+var property = document.createElement("textarea");
+property.rows = '2';
+property.cols = '30';
+property.id = 'property';
+property.placeholder = 'Property';
+
+setTimeout(waitForWelcomeSecond, 50);
+function waitForWelcomeSecond(){
+    property.classList.add('welcome-animation');
+};
+
+container.appendChild(property);
 
 // Css value
-setTimeout(waitForWelcomeThird, 100);
+var value = document.createElement("textarea");
+value.rows = '2';
+value.cols = '25';
+value.id = 'value';
+value.placeholder = 'Value && Enter';
 
-function waitForWelcomeThird(){
-    var value = document.createElement("textarea");
-    value.rows = '2';
-    value.cols = '25';
-    value.id = 'value';
-    value.placeholder = 'Value && Enter';
-    selector.classList.add('welcome-animation');
-    container.appendChild(value);
+setTimeout(waitForWelcomeSecond, 50);
+function waitForWelcomeSecond(){
+    value.classList.add('welcome-animation');
+};
+
+container.appendChild(value);
 };
 
 // Add style with jQuery
