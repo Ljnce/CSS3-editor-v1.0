@@ -32,13 +32,12 @@ value.cols = '25';
 value.id = 'value';
 value.placeholder = 'Value && Enter';
 
-setTimeout(waitForWelcomeSecond, 50);
-function waitForWelcomeSecond(){
+setTimeout(waitForWelcomeThird, 100);
+function waitForWelcomeThird(){
     value.classList.add('welcome-animation');
 };
 
 container.appendChild(value);
-};
 
 // Add style with jQuery
 // $('#s').keypress(function(event){
