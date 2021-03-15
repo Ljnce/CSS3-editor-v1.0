@@ -12,17 +12,16 @@ selector.classList.add('welcome-animation');
 container.appendChild(selector);
 
 // Property
-setTimeout(waitForWelcomeSecond, 50);
-
-function waitForWelcomeSecond(){
     var property = document.createElement("textarea");
     property.rows = '2';
     property.cols = '30';
     property.id = 'property';
     property.placeholder = 'Property';
-    selector.classList.add('welcome-animation');
+    setTimeout(waitForWelcomeSecond, 50);
+    function waitForWelcomeSecond(){
+        selector.classList.add('welcome-animation');
+        };
     container.appendChild(property);
-};
 
 // Css value
 setTimeout(waitForWelcomeThird, 100);
