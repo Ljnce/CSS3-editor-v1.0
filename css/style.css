@@ -1,0 +1,47 @@
+#style-editor {
+    width: 290px !important;
+    height: 115px !important;
+    position: fixed !important;
+    z-index: 9999 !important;
+    opacity: 0.2;
+    top: 10px !important;
+    transition: opacity 0.7s !important;
+    margin-left: 10px;
+}
+
+/* Textarea style */
+textarea {
+    padding-left: 5px !important;
+    padding-top: 3px !important;
+    border: none !important;
+    border: 1px solid !important;
+    overflow-y: hidden !important;
+}
+
+textarea:nth-of-type(1),
+textarea:nth-of-type(2) {
+    margin-bottom: 5px !important;
+    resize: none !important;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* Animation */
+.welcome-animation {
+  animation: welcome 2.8s ease;
+}
+
+@keyframes welcome {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
