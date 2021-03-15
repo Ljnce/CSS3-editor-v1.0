@@ -18,10 +18,10 @@ property.cols = '30';
 property.id = 'property';
 property.placeholder = 'Property';
 
-setTimeout(waitForWelcomeSecond, 50);
-function waitForWelcomeSecond(){
+// setTimeout(waitForWelcomeSecond, 50);
+// function waitForWelcomeSecond(){
     property.classList.add('welcome-animation');
-};
+// };
 
 container.appendChild(property);
 
@@ -32,10 +32,10 @@ value.cols = '25';
 value.id = 'value';
 value.placeholder = 'Value && Enter';
 
-setTimeout(waitForWelcomeThird, 100);
-function waitForWelcomeThird(){
+// setTimeout(waitForWelcomeThird, 100);
+// function waitForWelcomeThird(){
     value.classList.add('welcome-animation');
-};
+// };
 
 container.appendChild(value);
 
