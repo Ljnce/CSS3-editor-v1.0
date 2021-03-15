@@ -65,13 +65,13 @@ container.onmouseout = function(){
 };
 
 // Add welcome animation
-setTimeout(waitForWelcomeSecond, 100)
+setTimeout(waitForWelcomeSecond, 50)
 
 function waitForWelcomeSecond(){
     property.classList.add('welcome-animation');
 };
 
-setTimeout(waitForWelcomeThird, 200)
+setTimeout(waitForWelcomeThird, 100)
 function waitForWelcomeThird(){
     value.classList.add('welcome-animation');
 };

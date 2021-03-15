@@ -9,12 +9,6 @@
     margin-left: 10px;
 }
 
-#selctor,
-#property,
-#value {
-    display: none;
-}
-
 /* Textarea style */
 textarea {
     padding-left: 5px !important;
@@ -38,7 +32,6 @@ textarea:focus {
 
 /* Animation */
 .welcome-animation {
-    display: block;
   animation: welcome 2.8s ease;
 }
 
