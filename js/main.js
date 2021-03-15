@@ -12,20 +12,30 @@ selector.classList.add('welcome-animation');
 container.appendChild(selector);
 
 // Property
-var property = document.createElement("textarea");
-property.rows = '2';
-property.cols = '30';
-property.id = 'property';
-property.placeholder = 'Property';
-container.appendChild(property);
+setTimeout(waitForWelcomeSecond, 50);
+
+function waitForWelcomeSecond(){
+    var property = document.createElement("textarea");
+    property.rows = '2';
+    property.cols = '30';
+    property.id = 'property';
+    property.placeholder = 'Property';
+    selector.classList.add('welcome-animation');
+    container.appendChild(property);
+};
 
 // Css value
-var value = document.createElement("textarea");
-value.rows = '2';
-value.cols = '25';
-value.id = 'value';
-value.placeholder = 'Value + Press Enter';
-container.appendChild(value);
+setTimeout(waitForWelcomeThird, 100);
+
+function waitForWelcomeThird(){
+    var value = document.createElement("textarea");
+    value.rows = '2';
+    value.cols = '25';
+    value.id = 'value';
+    value.placeholder = 'Value && Enter';
+    selector.classList.add('welcome-animation');
+    container.appendChild(value);
+};
 
 // Add style with jQuery
 // $('#s').keypress(function(event){
@@ -62,16 +72,4 @@ container.onmouseover = function(){
 
 container.onmouseout = function(){
     container.style.opacity = 0.3;
-};
-
-// Add welcome animation
-setTimeout(waitForWelcomeSecond, 50)
-
-function waitForWelcomeSecond(){
-    property.classList.add('welcome-animation');
-};
-
-setTimeout(waitForWelcomeThird, 100)
-function waitForWelcomeThird(){
-    value.classList.add('welcome-animation');
 };
