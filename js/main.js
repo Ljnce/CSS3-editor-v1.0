@@ -75,9 +75,3 @@ container.onmouseover = function(){
 container.onmouseout = function(){
     container.style.opacity = 0.3;
 };
-
-jQuery(document).ready(function($){
-  $("#id").click(function(){
-    console.log('test');
-  });
-});
